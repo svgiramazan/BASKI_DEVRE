@@ -1,0 +1,65 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F84A ]
+[d frameptr 0 ]
+"10 D:\mplab\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\mplab\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\mplab\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"33 D:\Workspace\DERS\MM_Projects\Codes\DISP.X\main.c
+[v _setup setup `(v  1 e 1 0 ]
+"40
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"46
+[v _update_display update_display `(v  1 e 1 0 ]
+"54
+[v _main main `(v  1 e 1 0 ]
+"166 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"210
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"454
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"498
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"660
+[v _RA0 RA0 `VEb  1 e 0 @40 ]
+"663
+[v _RA1 RA1 `VEb  1 e 0 @41 ]
+"11 D:\Workspace\DERS\MM_Projects\Codes\DISP.X\main.c
+[v _seven_seg_digits seven_seg_digits `DC[10]uc  1 e 10 0 ]
+"30
+[v _display1 display1 `i  1 e 2 0 ]
+"31
+[v _display2 display2 `i  1 e 2 0 ]
+"54
+[v _main main `(v  1 e 1 0 ]
+{
+"88
+} 0
+"46
+[v _update_display update_display `(v  1 e 1 0 ]
+{
+[v update_display@sayi1 sayi1 `i  1 p 2 0 ]
+[v update_display@sayi2 sayi2 `i  1 p 2 2 ]
+"51
+} 0
+"33
+[v _setup setup `(v  1 e 1 0 ]
+{
+"38
+} 0
+"40
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"41
+[v delay_ms@i i `ui  1 a 2 3 ]
+"40
+[v delay_ms@ms ms `ui  1 p 2 0 ]
+"44
+} 0

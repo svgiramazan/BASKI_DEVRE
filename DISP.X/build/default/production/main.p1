@@ -1,0 +1,299 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"454 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 454: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"166
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"498
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 498: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"210
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 210: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+[p mainexit ]
+"172
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 172:     struct {
+[s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S10 . RA0 RA1 RA2 RA3 RA4 ]
+"171
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 171: typedef union {
+[u S9 `S10 1 ]
+[n S9 . . ]
+"180
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 180: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
+[v _PORTAbits `VS9 ~T0 @X0 0 e@5 ]
+[v F164 `(v ~T0 @X0 1 tf1`ul ]
+"20 D:\mplab\pic\include/builtins.h
+[v __delay `JF164 ~T0 @X0 0 e ]
+[p i __delay ]
+"2 main.c
+[p x FOSC  =  XT         ]
+"3
+[p x WDTE  =  OFF        ]
+"4
+[p x PWRTE  =  ON        ]
+"5
+[p x CP  =  ON           ]
+"54 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"212
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 212: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"274
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 274: __asm("EEDATA equ 08h");
+[; <" EEDATA equ 08h ;# ">
+"281
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 281: __asm("EEADR equ 09h");
+[; <" EEADR equ 09h ;# ">
+"288
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 288: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"308
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 308: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"386
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 386: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"456
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 456: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"500
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 500: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"562
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 562: __asm("EECON1 equ 088h");
+[; <" EECON1 equ 088h ;# ">
+"606
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 606: __asm("EECON2 equ 089h");
+[; <" EECON2 equ 089h ;# ">
+"11 main.c
+[; ;main.c: 11: void setup(){
+[v _setup `(v ~T0 @X0 1 ef ]
+{
+[e :U _setup ]
+[f ]
+"12
+[; ;main.c: 12:     TRISA= 0b00011;
+[e = _TRISA -> -> 3 `i `uc ]
+"13
+[; ;main.c: 13:     PORTA=0;
+[e = _PORTA -> -> 0 `i `uc ]
+"14
+[; ;main.c: 14:     TRISB=0;
+[e = _TRISB -> -> 0 `i `uc ]
+"15
+[; ;main.c: 15:     PORTB=0;
+[e = _PORTB -> -> 0 `i `uc ]
+"16
+[; ;main.c: 16: }
+[e :UE 27 ]
+}
+"18
+[; ;main.c: 18: int sayiAl(int sayi){
+[v _sayiAl `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _sayiAl ]
+[v _sayi `i ~T0 @X0 1 r1 ]
+[f ]
+"19
+[; ;main.c: 19:     int deger;
+[v _deger `i ~T0 @X0 1 a ]
+"21
+[; ;main.c: 21:     switch(sayi){
+[e $U 30  ]
+{
+"22
+[; ;main.c: 22:         case 0: deger=0b01011111;break;
+[e :U 31 ]
+[e = _deger -> 95 `i ]
+[e $U 29  ]
+"23
+[; ;main.c: 23:         case 1: deger=0b00000110;break;
+[e :U 32 ]
+[e = _deger -> 6 `i ]
+[e $U 29  ]
+"24
+[; ;main.c: 24:         case 2: deger=0b01111011;break;
+[e :U 33 ]
+[e = _deger -> 123 `i ]
+[e $U 29  ]
+"25
+[; ;main.c: 25:         case 3: deger=0b00101111;break;
+[e :U 34 ]
+[e = _deger -> 47 `i ]
+[e $U 29  ]
+"26
+[; ;main.c: 26:         case 4: deger=0b01100110;break;
+[e :U 35 ]
+[e = _deger -> 102 `i ]
+[e $U 29  ]
+"27
+[; ;main.c: 27:         case 5: deger=0b01101101;break;
+[e :U 36 ]
+[e = _deger -> 109 `i ]
+[e $U 29  ]
+"28
+[; ;main.c: 28:         case 6: deger=0b01111101;break;
+[e :U 37 ]
+[e = _deger -> 125 `i ]
+[e $U 29  ]
+"29
+[; ;main.c: 29:         case 7: deger=0000000111;break;
+[e :U 38 ]
+[e = _deger -> 73 `i ]
+[e $U 29  ]
+"30
+[; ;main.c: 30:         case 8: deger=0b01111111;break;
+[e :U 39 ]
+[e = _deger -> 127 `i ]
+[e $U 29  ]
+"31
+[; ;main.c: 31:         case 9: deger=0b01101111;break;
+[e :U 40 ]
+[e = _deger -> 111 `i ]
+[e $U 29  ]
+"34
+[; ;main.c: 34:     }
+}
+[e $U 29  ]
+[e :U 30 ]
+[e [\ _sayi , $ -> 0 `i 31
+ , $ -> 1 `i 32
+ , $ -> 2 `i 33
+ , $ -> 3 `i 34
+ , $ -> 4 `i 35
+ , $ -> 5 `i 36
+ , $ -> 6 `i 37
+ , $ -> 7 `i 38
+ , $ -> 8 `i 39
+ , $ -> 9 `i 40
+ 29 ]
+[e :U 29 ]
+"35
+[; ;main.c: 35: }
+[e :UE 28 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"37
+[; ;main.c: 37: void main(void){
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"38
+[; ;main.c: 38:     int AB=0,A,B;
+[v _AB `i ~T0 @X0 1 a ]
+[e = _AB -> 0 `i ]
+[v _A `i ~T0 @X0 1 a ]
+[v _B `i ~T0 @X0 1 a ]
+"39
+[; ;main.c: 39:     while(1){
+[e :U 43 ]
+{
+"40
+[; ;main.c: 40:         if(PORTAbits.RA0==1){
+[e $ ! == -> . . _PORTAbits 0 0 `i -> 1 `i 45  ]
+{
+"41
+[; ;main.c: 41:             AB++;
+[e ++ _AB -> 1 `i ]
+"42
+[; ;main.c: 42:             if(AB==100){
+[e $ ! == _AB -> 100 `i 46  ]
+{
+"43
+[; ;main.c: 43:                 AB=0;
+[e = _AB -> 0 `i ]
+"44
+[; ;main.c: 44:                 _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"45
+[; ;main.c: 45:             }
+}
+[e :U 46 ]
+"46
+[; ;main.c: 46:         }
+}
+[e :U 45 ]
+"47
+[; ;main.c: 47:          if(PORTAbits.RA1==1){
+[e $ ! == -> . . _PORTAbits 0 1 `i -> 1 `i 47  ]
+{
+"48
+[; ;main.c: 48:             AB--;
+[e -- _AB -> 1 `i ]
+"49
+[; ;main.c: 49:             if(AB==0){
+[e $ ! == _AB -> 0 `i 48  ]
+{
+"50
+[; ;main.c: 50:                 AB=99;
+[e = _AB -> 99 `i ]
+"51
+[; ;main.c: 51:                 _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"52
+[; ;main.c: 52:             }
+}
+[e :U 48 ]
+"53
+[; ;main.c: 53:         }
+}
+[e :U 47 ]
+"55
+[; ;main.c: 55:         A=AB/10;
+[e = _A / _AB -> 10 `i ]
+"56
+[; ;main.c: 56:         B=AB%10;
+[e = _B % _AB -> 10 `i ]
+"58
+[; ;main.c: 58:         PORTAbits.RA3=1;
+[e = . . _PORTAbits 0 3 -> -> 1 `i `uc ]
+"59
+[; ;main.c: 59:         PORTAbits.RA2=0;
+[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
+"60
+[; ;main.c: 60:         PORTB=sayiAl(B);
+[e = _PORTB -> ( _sayiAl (1 _B `uc ]
+"61
+[; ;main.c: 61:         _delay((unsigned long)((5)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"63
+[; ;main.c: 63:         PORTAbits.RA3=0;
+[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
+"64
+[; ;main.c: 64:         PORTAbits.RA2=1;
+[e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
+"65
+[; ;main.c: 65:         PORTB=sayiAl(A);
+[e = _PORTB -> ( _sayiAl (1 _A `uc ]
+"66
+[; ;main.c: 66:         _delay((unsigned long)((5)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"68
+[; ;main.c: 68:     }
+}
+[e :U 42 ]
+[e $U 43  ]
+[e :U 44 ]
+"69
+[; ;main.c: 69: }
+[e :UE 41 ]
+}

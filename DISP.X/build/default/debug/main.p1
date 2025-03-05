@@ -1,0 +1,306 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"498 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 498: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"454
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 454: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"210
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 210: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"166
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+[v F164 `(v ~T0 @X0 1 tf1`ul ]
+"20 D:\mplab\pic\include/builtins.h
+[v __delay `JF164 ~T0 @X0 0 e ]
+[p i __delay ]
+[p mainexit ]
+"660 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 660: extern volatile __bit RA0 __attribute__((address(0x28)));
+[v _RA0 `Vb ~T0 @X0 0 e@40 ]
+"663
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 663: extern volatile __bit RA1 __attribute__((address(0x29)));
+[v _RA1 `Vb ~T0 @X0 0 e@41 ]
+"2 main.c
+[p x FOSC  =  XT         ]
+"3
+[p x WDTE  =  OFF        ]
+"4
+[p x PWRTE  =  ON        ]
+"5
+[p x CP  =  OFF          ]
+"54 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"212
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 212: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"274
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 274: __asm("EEDATA equ 08h");
+[; <" EEDATA equ 08h ;# ">
+"281
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 281: __asm("EEADR equ 09h");
+[; <" EEADR equ 09h ;# ">
+"288
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 288: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"308
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 308: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"386
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 386: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"456
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 456: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"500
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 500: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"562
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 562: __asm("EECON1 equ 088h");
+[; <" EECON1 equ 088h ;# ">
+"606
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 606: __asm("EECON2 equ 089h");
+[; <" EECON2 equ 089h ;# ">
+"11 main.c
+[; ;main.c: 11: const unsigned char seven_seg_digits[] = {
+[v _seven_seg_digits `Cuc ~T0 @X0 -> 10 `i e ]
+[i _seven_seg_digits
+:U ..
+-> -> 63 `i `uc
+-> -> 6 `i `uc
+-> -> 91 `i `uc
+-> -> 79 `i `uc
+-> -> 102 `i `uc
+-> -> 109 `i `uc
+-> -> 125 `i `uc
+-> -> 7 `i `uc
+-> -> 127 `i `uc
+-> -> 111 `i `uc
+..
+]
+"30
+[; ;main.c: 30: int display1 = 0;
+[v _display1 `i ~T0 @X0 1 e ]
+[i _display1
+-> 0 `i
+]
+"31
+[; ;main.c: 31: int display2 = 0;
+[v _display2 `i ~T0 @X0 1 e ]
+[i _display2
+-> 0 `i
+]
+"33
+[; ;main.c: 33: void setup() {
+[v _setup `(v ~T0 @X0 1 ef ]
+{
+[e :U _setup ]
+[f ]
+"34
+[; ;main.c: 34:     TRISB = 0x00;
+[e = _TRISB -> -> 0 `i `uc ]
+"35
+[; ;main.c: 35:     TRISA = 0x03;
+[e = _TRISA -> -> 3 `i `uc ]
+"36
+[; ;main.c: 36:     PORTB = 0x00;
+[e = _PORTB -> -> 0 `i `uc ]
+"37
+[; ;main.c: 37:     PORTA = 0x00;
+[e = _PORTA -> -> 0 `i `uc ]
+"38
+[; ;main.c: 38: }
+[e :UE 27 ]
+}
+"40
+[; ;main.c: 40: void delay_ms(unsigned int ms) {
+[v _delay_ms `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _delay_ms ]
+[v _ms `ui ~T0 @X0 1 r1 ]
+[f ]
+"41
+[; ;main.c: 41:     for (unsigned int i = 0; i < ms; i++) {
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $U 32  ]
+[e :U 29 ]
+{
+"42
+[; ;main.c: 42:         _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"43
+[; ;main.c: 43:     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 32 ]
+[e $ < _i _ms 29  ]
+[e :U 30 ]
+}
+"44
+[; ;main.c: 44: }
+[e :UE 28 ]
+}
+"46
+[; ;main.c: 46: void update_display(int sayi1, int sayi2) {
+[v _update_display `(v ~T0 @X0 1 ef2`i`i ]
+{
+[e :U _update_display ]
+[v _sayi1 `i ~T0 @X0 1 r1 ]
+[v _sayi2 `i ~T0 @X0 1 r2 ]
+[f ]
+"48
+[; ;main.c: 48:     PORTB = (unsigned char)((PORTB & 0xF0) | (seven_seg_digits[sayi1] & 0x0F));
+[e = _PORTB -> | & -> _PORTB `i -> 240 `i & -> *U + &U _seven_seg_digits * -> -> _sayi1 `ui `ux -> -> # *U &U _seven_seg_digits `ui `ux `i -> 15 `i `uc ]
+"50
+[; ;main.c: 50:     PORTB = (unsigned char)((PORTB & 0x0F) | ((seven_seg_digits[sayi2] << 4) & 0xF0));
+[e = _PORTB -> | & -> _PORTB `i -> 15 `i & << -> *U + &U _seven_seg_digits * -> -> _sayi2 `ui `ux -> -> # *U &U _seven_seg_digits `ui `ux `i -> 4 `i -> 240 `i `uc ]
+"51
+[; ;main.c: 51: }
+[e :UE 33 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"54
+[; ;main.c: 54: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"55
+[; ;main.c: 55:     setup();
+[e ( _setup ..  ]
+"57
+[; ;main.c: 57:     while (1) {
+[e :U 36 ]
+{
+"58
+[; ;main.c: 58:         if (RA0 == 1) {
+[e $ ! == -> _RA0 `i -> 1 `i 38  ]
+{
+"59
+[; ;main.c: 59:             delay_ms(200);
+[e ( _delay_ms (1 -> -> 200 `i `ui ]
+"60
+[; ;main.c: 60:             if (RA0 == 1) {
+[e $ ! == -> _RA0 `i -> 1 `i 39  ]
+{
+"61
+[; ;main.c: 61:                 display1++;
+[e ++ _display1 -> 1 `i ]
+"62
+[; ;main.c: 62:                 if (display1 > 9) {
+[e $ ! > _display1 -> 9 `i 40  ]
+{
+"63
+[; ;main.c: 63:                     display1 = 0;
+[e = _display1 -> 0 `i ]
+"64
+[; ;main.c: 64:                     display2++;
+[e ++ _display2 -> 1 `i ]
+"65
+[; ;main.c: 65:                     if (display2 > 9) {
+[e $ ! > _display2 -> 9 `i 41  ]
+{
+"66
+[; ;main.c: 66:                         display2 = 0;
+[e = _display2 -> 0 `i ]
+"67
+[; ;main.c: 67:                     }
+}
+[e :U 41 ]
+"68
+[; ;main.c: 68:                 }
+}
+[e :U 40 ]
+"69
+[; ;main.c: 69:                 update_display(display1, display2);
+[e ( _update_display (2 , _display1 _display2 ]
+"70
+[; ;main.c: 70:             }
+}
+[e :U 39 ]
+"71
+[; ;main.c: 71:         }
+}
+[e :U 38 ]
+"73
+[; ;main.c: 73:         if (RA1 == 1) {
+[e $ ! == -> _RA1 `i -> 1 `i 42  ]
+{
+"74
+[; ;main.c: 74:             delay_ms(200);
+[e ( _delay_ms (1 -> -> 200 `i `ui ]
+"75
+[; ;main.c: 75:             if (RA1 == 1) {
+[e $ ! == -> _RA1 `i -> 1 `i 43  ]
+{
+"76
+[; ;main.c: 76:                 if (display1 == 0) {
+[e $ ! == _display1 -> 0 `i 44  ]
+{
+"77
+[; ;main.c: 77:                     if (display2 > 0) {
+[e $ ! > _display2 -> 0 `i 45  ]
+{
+"78
+[; ;main.c: 78:                         display2--;
+[e -- _display2 -> 1 `i ]
+"79
+[; ;main.c: 79:                         display1 = 9;
+[e = _display1 -> 9 `i ]
+"80
+[; ;main.c: 80:                     }
+}
+[e :U 45 ]
+"81
+[; ;main.c: 81:                 } else {
+}
+[e $U 46  ]
+[e :U 44 ]
+{
+"82
+[; ;main.c: 82:                     display1--;
+[e -- _display1 -> 1 `i ]
+"83
+[; ;main.c: 83:                 }
+}
+[e :U 46 ]
+"84
+[; ;main.c: 84:                 update_display(display1, display2);
+[e ( _update_display (2 , _display1 _display2 ]
+"85
+[; ;main.c: 85:             }
+}
+[e :U 43 ]
+"86
+[; ;main.c: 86:         }
+}
+[e :U 42 ]
+"87
+[; ;main.c: 87:     }
+}
+[e :U 35 ]
+[e $U 36  ]
+[e :U 37 ]
+"88
+[; ;main.c: 88: }
+[e :UE 34 ]
+}

@@ -1,0 +1,522 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"687 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 687: extern volatile __bit RB4 __attribute__((address(0x34)));
+[v _RB4 `Vb ~T0 @X0 0 e@52 ]
+"690
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 690: extern volatile __bit RB5 __attribute__((address(0x35)));
+[v _RB5 `Vb ~T0 @X0 0 e@53 ]
+"693
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 693: extern volatile __bit RB6 __attribute__((address(0x36)));
+[v _RB6 `Vb ~T0 @X0 0 e@54 ]
+"696
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 696: extern volatile __bit RB7 __attribute__((address(0x37)));
+[v _RB7 `Vb ~T0 @X0 0 e@55 ]
+"681
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 681: extern volatile __bit RB2 __attribute__((address(0x32)));
+[v _RB2 `Vb ~T0 @X0 0 e@50 ]
+"684
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 684: extern volatile __bit RB3 __attribute__((address(0x33)));
+[v _RB3 `Vb ~T0 @X0 0 e@51 ]
+[v F164 `(v ~T0 @X0 1 tf1`ul ]
+"20 D:\mplab\pic\include/builtins.h
+[v __delay `JF164 ~T0 @X0 0 e ]
+[p i __delay ]
+"498 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 498: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+[p mainexit ]
+"8 main.c
+[p x FOSC  =  XT         ]
+"9
+[p x WDTE  =  OFF        ]
+"10
+[p x PWRTE  =  ON        ]
+"11
+[p x CP  =  ON           ]
+"54 D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"212
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 212: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"274
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 274: __asm("EEDATA equ 08h");
+[; <" EEDATA equ 08h ;# ">
+"281
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 281: __asm("EEADR equ 09h");
+[; <" EEADR equ 09h ;# ">
+"288
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 288: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"308
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 308: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"386
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 386: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"456
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 456: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"500
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 500: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"562
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 562: __asm("EECON1 equ 088h");
+[; <" EECON1 equ 088h ;# ">
+"606
+[; ;D:/mplab/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f84a.h: 606: __asm("EECON2 equ 089h");
+[; <" EECON2 equ 089h ;# ">
+"4 D:\mplab\pic\include\c99/lcd.h
+[; ;D:\mplab\pic\include\c99/lcd.h: 4: void Lcd_Port(char a)
+[v _Lcd_Port `(v ~T0 @X0 1 ef1`uc ]
+"5
+[; ;D:\mplab\pic\include\c99/lcd.h: 5: {
+{
+[e :U _Lcd_Port ]
+"4
+[; ;D:\mplab\pic\include\c99/lcd.h: 4: void Lcd_Port(char a)
+[v _a `uc ~T0 @X0 1 r1 ]
+"5
+[; ;D:\mplab\pic\include\c99/lcd.h: 5: {
+[f ]
+"6
+[; ;D:\mplab\pic\include\c99/lcd.h: 6:  if(a & 1)
+[e $ ! != & -> _a `i -> 1 `i -> 0 `i 28  ]
+"7
+[; ;D:\mplab\pic\include\c99/lcd.h: 7:   RB4 = 1;
+[e = _RB4 -> -> 1 `i `b ]
+[e $U 29  ]
+"8
+[; ;D:\mplab\pic\include\c99/lcd.h: 8:  else
+[e :U 28 ]
+"9
+[; ;D:\mplab\pic\include\c99/lcd.h: 9:   RB4 = 0;
+[e = _RB4 -> -> 0 `i `b ]
+[e :U 29 ]
+"11
+[; ;D:\mplab\pic\include\c99/lcd.h: 11:  if(a & 2)
+[e $ ! != & -> _a `i -> 2 `i -> 0 `i 30  ]
+"12
+[; ;D:\mplab\pic\include\c99/lcd.h: 12:   RB5 = 1;
+[e = _RB5 -> -> 1 `i `b ]
+[e $U 31  ]
+"13
+[; ;D:\mplab\pic\include\c99/lcd.h: 13:  else
+[e :U 30 ]
+"14
+[; ;D:\mplab\pic\include\c99/lcd.h: 14:   RB5 = 0;
+[e = _RB5 -> -> 0 `i `b ]
+[e :U 31 ]
+"16
+[; ;D:\mplab\pic\include\c99/lcd.h: 16:  if(a & 4)
+[e $ ! != & -> _a `i -> 4 `i -> 0 `i 32  ]
+"17
+[; ;D:\mplab\pic\include\c99/lcd.h: 17:   RB6 = 1;
+[e = _RB6 -> -> 1 `i `b ]
+[e $U 33  ]
+"18
+[; ;D:\mplab\pic\include\c99/lcd.h: 18:  else
+[e :U 32 ]
+"19
+[; ;D:\mplab\pic\include\c99/lcd.h: 19:   RB6 = 0;
+[e = _RB6 -> -> 0 `i `b ]
+[e :U 33 ]
+"21
+[; ;D:\mplab\pic\include\c99/lcd.h: 21:  if(a & 8)
+[e $ ! != & -> _a `i -> 8 `i -> 0 `i 34  ]
+"22
+[; ;D:\mplab\pic\include\c99/lcd.h: 22:   RB7 = 1;
+[e = _RB7 -> -> 1 `i `b ]
+[e $U 35  ]
+"23
+[; ;D:\mplab\pic\include\c99/lcd.h: 23:  else
+[e :U 34 ]
+"24
+[; ;D:\mplab\pic\include\c99/lcd.h: 24:   RB7 = 0;
+[e = _RB7 -> -> 0 `i `b ]
+[e :U 35 ]
+"25
+[; ;D:\mplab\pic\include\c99/lcd.h: 25: }
+[e :UE 27 ]
+}
+"26
+[; ;D:\mplab\pic\include\c99/lcd.h: 26: void Lcd_Cmd(char a)
+[v _Lcd_Cmd `(v ~T0 @X0 1 ef1`uc ]
+"27
+[; ;D:\mplab\pic\include\c99/lcd.h: 27: {
+{
+[e :U _Lcd_Cmd ]
+"26
+[; ;D:\mplab\pic\include\c99/lcd.h: 26: void Lcd_Cmd(char a)
+[v _a `uc ~T0 @X0 1 r1 ]
+"27
+[; ;D:\mplab\pic\include\c99/lcd.h: 27: {
+[f ]
+"28
+[; ;D:\mplab\pic\include\c99/lcd.h: 28:  RB2 = 0;
+[e = _RB2 -> -> 0 `i `b ]
+"29
+[; ;D:\mplab\pic\include\c99/lcd.h: 29:  Lcd_Port(a);
+[e ( _Lcd_Port (1 _a ]
+"30
+[; ;D:\mplab\pic\include\c99/lcd.h: 30:  RB3 = 1;
+[e = _RB3 -> -> 1 `i `b ]
+"31
+[; ;D:\mplab\pic\include\c99/lcd.h: 31:         _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"32
+[; ;D:\mplab\pic\include\c99/lcd.h: 32:         RB3 = 0;
+[e = _RB3 -> -> 0 `i `b ]
+"33
+[; ;D:\mplab\pic\include\c99/lcd.h: 33: }
+[e :UE 36 ]
+}
+"35
+[; ;D:\mplab\pic\include\c99/lcd.h: 35: Lcd_Clear()
+[v _Lcd_Clear `(i ~T0 @X0 1 ef ]
+"36
+[; ;D:\mplab\pic\include\c99/lcd.h: 36: {
+{
+[e :U _Lcd_Clear ]
+[f ]
+"37
+[; ;D:\mplab\pic\include\c99/lcd.h: 37:  Lcd_Cmd(0);
+[e ( _Lcd_Cmd (1 -> -> 0 `i `uc ]
+"38
+[; ;D:\mplab\pic\include\c99/lcd.h: 38:  Lcd_Cmd(1);
+[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
+"39
+[; ;D:\mplab\pic\include\c99/lcd.h: 39: }
+[e :UE 37 ]
+}
+"41
+[; ;D:\mplab\pic\include\c99/lcd.h: 41: void Lcd_Set_Cursor(char a, char b)
+[v _Lcd_Set_Cursor `(v ~T0 @X0 1 ef2`uc`uc ]
+"42
+[; ;D:\mplab\pic\include\c99/lcd.h: 42: {
+{
+[e :U _Lcd_Set_Cursor ]
+"41
+[; ;D:\mplab\pic\include\c99/lcd.h: 41: void Lcd_Set_Cursor(char a, char b)
+[v _a `uc ~T0 @X0 1 r1 ]
+[v _b `uc ~T0 @X0 1 r2 ]
+"42
+[; ;D:\mplab\pic\include\c99/lcd.h: 42: {
+[f ]
+"43
+[; ;D:\mplab\pic\include\c99/lcd.h: 43:  char temp,z,y;
+[v _temp `uc ~T0 @X0 1 a ]
+[v _z `uc ~T0 @X0 1 a ]
+[v _y `uc ~T0 @X0 1 a ]
+"44
+[; ;D:\mplab\pic\include\c99/lcd.h: 44:  if(a == 1)
+[e $ ! == -> _a `i -> 1 `i 39  ]
+"45
+[; ;D:\mplab\pic\include\c99/lcd.h: 45:  {
+{
+"46
+[; ;D:\mplab\pic\include\c99/lcd.h: 46:    temp = 0x80 + b - 1;
+[e = _temp -> - + -> 128 `i -> _b `i -> 1 `i `uc ]
+"47
+[; ;D:\mplab\pic\include\c99/lcd.h: 47:   z = temp>>4;
+[e = _z -> >> -> _temp `i -> 4 `i `uc ]
+"48
+[; ;D:\mplab\pic\include\c99/lcd.h: 48:   y = temp & 0x0F;
+[e = _y -> & -> _temp `i -> 15 `i `uc ]
+"49
+[; ;D:\mplab\pic\include\c99/lcd.h: 49:   Lcd_Cmd(z);
+[e ( _Lcd_Cmd (1 _z ]
+"50
+[; ;D:\mplab\pic\include\c99/lcd.h: 50:   Lcd_Cmd(y);
+[e ( _Lcd_Cmd (1 _y ]
+"51
+[; ;D:\mplab\pic\include\c99/lcd.h: 51:  }
+}
+[e $U 40  ]
+"52
+[; ;D:\mplab\pic\include\c99/lcd.h: 52:  else if(a == 2)
+[e :U 39 ]
+[e $ ! == -> _a `i -> 2 `i 41  ]
+"53
+[; ;D:\mplab\pic\include\c99/lcd.h: 53:  {
+{
+"54
+[; ;D:\mplab\pic\include\c99/lcd.h: 54:   temp = 0xC0 + b - 1;
+[e = _temp -> - + -> 192 `i -> _b `i -> 1 `i `uc ]
+"55
+[; ;D:\mplab\pic\include\c99/lcd.h: 55:   z = temp>>4;
+[e = _z -> >> -> _temp `i -> 4 `i `uc ]
+"56
+[; ;D:\mplab\pic\include\c99/lcd.h: 56:   y = temp & 0x0F;
+[e = _y -> & -> _temp `i -> 15 `i `uc ]
+"57
+[; ;D:\mplab\pic\include\c99/lcd.h: 57:   Lcd_Cmd(z);
+[e ( _Lcd_Cmd (1 _z ]
+"58
+[; ;D:\mplab\pic\include\c99/lcd.h: 58:   Lcd_Cmd(y);
+[e ( _Lcd_Cmd (1 _y ]
+"59
+[; ;D:\mplab\pic\include\c99/lcd.h: 59:  }
+}
+[e :U 41 ]
+[e :U 40 ]
+"60
+[; ;D:\mplab\pic\include\c99/lcd.h: 60: }
+[e :UE 38 ]
+}
+"62
+[; ;D:\mplab\pic\include\c99/lcd.h: 62: void Lcd_Init()
+[v _Lcd_Init `(v ~T0 @X0 1 ef ]
+"63
+[; ;D:\mplab\pic\include\c99/lcd.h: 63: {
+{
+[e :U _Lcd_Init ]
+[f ]
+"64
+[; ;D:\mplab\pic\include\c99/lcd.h: 64:   Lcd_Port(0x00);
+[e ( _Lcd_Port (1 -> -> 0 `i `uc ]
+"65
+[; ;D:\mplab\pic\include\c99/lcd.h: 65:    _delay((unsigned long)((20)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"66
+[; ;D:\mplab\pic\include\c99/lcd.h: 66:   Lcd_Cmd(0x03);
+[e ( _Lcd_Cmd (1 -> -> 3 `i `uc ]
+"67
+[; ;D:\mplab\pic\include\c99/lcd.h: 67:  _delay((unsigned long)((5)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"68
+[; ;D:\mplab\pic\include\c99/lcd.h: 68:   Lcd_Cmd(0x03);
+[e ( _Lcd_Cmd (1 -> -> 3 `i `uc ]
+"69
+[; ;D:\mplab\pic\include\c99/lcd.h: 69:  _delay((unsigned long)((11)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 11 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"70
+[; ;D:\mplab\pic\include\c99/lcd.h: 70:   Lcd_Cmd(0x03);
+[e ( _Lcd_Cmd (1 -> -> 3 `i `uc ]
+"72
+[; ;D:\mplab\pic\include\c99/lcd.h: 72:   Lcd_Cmd(0x02);
+[e ( _Lcd_Cmd (1 -> -> 2 `i `uc ]
+"73
+[; ;D:\mplab\pic\include\c99/lcd.h: 73:   Lcd_Cmd(0x02);
+[e ( _Lcd_Cmd (1 -> -> 2 `i `uc ]
+"74
+[; ;D:\mplab\pic\include\c99/lcd.h: 74:   Lcd_Cmd(0x08);
+[e ( _Lcd_Cmd (1 -> -> 8 `i `uc ]
+"75
+[; ;D:\mplab\pic\include\c99/lcd.h: 75:   Lcd_Cmd(0x00);
+[e ( _Lcd_Cmd (1 -> -> 0 `i `uc ]
+"76
+[; ;D:\mplab\pic\include\c99/lcd.h: 76:   Lcd_Cmd(0x0C);
+[e ( _Lcd_Cmd (1 -> -> 12 `i `uc ]
+"77
+[; ;D:\mplab\pic\include\c99/lcd.h: 77:   Lcd_Cmd(0x00);
+[e ( _Lcd_Cmd (1 -> -> 0 `i `uc ]
+"78
+[; ;D:\mplab\pic\include\c99/lcd.h: 78:   Lcd_Cmd(0x06);
+[e ( _Lcd_Cmd (1 -> -> 6 `i `uc ]
+"79
+[; ;D:\mplab\pic\include\c99/lcd.h: 79: }
+[e :UE 42 ]
+}
+"81
+[; ;D:\mplab\pic\include\c99/lcd.h: 81: void Lcd_Write_Char(char a)
+[v _Lcd_Write_Char `(v ~T0 @X0 1 ef1`uc ]
+"82
+[; ;D:\mplab\pic\include\c99/lcd.h: 82: {
+{
+[e :U _Lcd_Write_Char ]
+"81
+[; ;D:\mplab\pic\include\c99/lcd.h: 81: void Lcd_Write_Char(char a)
+[v _a `uc ~T0 @X0 1 r1 ]
+"82
+[; ;D:\mplab\pic\include\c99/lcd.h: 82: {
+[f ]
+"83
+[; ;D:\mplab\pic\include\c99/lcd.h: 83:    char temp,y;
+[v _temp `uc ~T0 @X0 1 a ]
+[v _y `uc ~T0 @X0 1 a ]
+"84
+[; ;D:\mplab\pic\include\c99/lcd.h: 84:    temp = a&0x0F;
+[e = _temp -> & -> _a `i -> 15 `i `uc ]
+"85
+[; ;D:\mplab\pic\include\c99/lcd.h: 85:    y = a&0xF0;
+[e = _y -> & -> _a `i -> 240 `i `uc ]
+"86
+[; ;D:\mplab\pic\include\c99/lcd.h: 86:    RB2 = 1;
+[e = _RB2 -> -> 1 `i `b ]
+"87
+[; ;D:\mplab\pic\include\c99/lcd.h: 87:    Lcd_Port(y>>4);
+[e ( _Lcd_Port (1 -> >> -> _y `i -> 4 `i `uc ]
+"88
+[; ;D:\mplab\pic\include\c99/lcd.h: 88:    RB3 = 1;
+[e = _RB3 -> -> 1 `i `b ]
+"89
+[; ;D:\mplab\pic\include\c99/lcd.h: 89:    _delay((unsigned long)((40)*(4000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
+"90
+[; ;D:\mplab\pic\include\c99/lcd.h: 90:    RB3 = 0;
+[e = _RB3 -> -> 0 `i `b ]
+"91
+[; ;D:\mplab\pic\include\c99/lcd.h: 91:    Lcd_Port(temp);
+[e ( _Lcd_Port (1 _temp ]
+"92
+[; ;D:\mplab\pic\include\c99/lcd.h: 92:    RB3 = 1;
+[e = _RB3 -> -> 1 `i `b ]
+"93
+[; ;D:\mplab\pic\include\c99/lcd.h: 93:    _delay((unsigned long)((40)*(4000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
+"94
+[; ;D:\mplab\pic\include\c99/lcd.h: 94:    RB3 = 0;
+[e = _RB3 -> -> 0 `i `b ]
+"95
+[; ;D:\mplab\pic\include\c99/lcd.h: 95: }
+[e :UE 43 ]
+}
+"97
+[; ;D:\mplab\pic\include\c99/lcd.h: 97: void Lcd_Write_String(char *a)
+[v _Lcd_Write_String `(v ~T0 @X0 1 ef1`*uc ]
+"98
+[; ;D:\mplab\pic\include\c99/lcd.h: 98: {
+{
+[e :U _Lcd_Write_String ]
+"97
+[; ;D:\mplab\pic\include\c99/lcd.h: 97: void Lcd_Write_String(char *a)
+[v _a `*uc ~T0 @X0 1 r1 ]
+"98
+[; ;D:\mplab\pic\include\c99/lcd.h: 98: {
+[f ]
+"99
+[; ;D:\mplab\pic\include\c99/lcd.h: 99:  int i;
+[v _i `i ~T0 @X0 1 a ]
+"100
+[; ;D:\mplab\pic\include\c99/lcd.h: 100:  for(i=0;a[i]!='\0';i++)
+{
+[e = _i -> 0 `i ]
+[e $U 48  ]
+[e :U 45 ]
+"101
+[; ;D:\mplab\pic\include\c99/lcd.h: 101:     Lcd_Write_Char(a[i]);
+[e ( _Lcd_Write_Char (1 *U + _a * -> _i `x -> -> # *U _a `i `x ]
+[e ++ _i -> 1 `i ]
+[e :U 48 ]
+[e $ != -> *U + _a * -> _i `x -> -> # *U _a `i `x `ui -> 0 `ui 45  ]
+[e :U 46 ]
+}
+"102
+[; ;D:\mplab\pic\include\c99/lcd.h: 102: }
+[e :UE 44 ]
+}
+"104
+[; ;D:\mplab\pic\include\c99/lcd.h: 104: void Lcd_Shift_Right()
+[v _Lcd_Shift_Right `(v ~T0 @X0 1 ef ]
+"105
+[; ;D:\mplab\pic\include\c99/lcd.h: 105: {
+{
+[e :U _Lcd_Shift_Right ]
+[f ]
+"106
+[; ;D:\mplab\pic\include\c99/lcd.h: 106:  Lcd_Cmd(0x01);
+[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
+"107
+[; ;D:\mplab\pic\include\c99/lcd.h: 107:  Lcd_Cmd(0x0C);
+[e ( _Lcd_Cmd (1 -> -> 12 `i `uc ]
+"108
+[; ;D:\mplab\pic\include\c99/lcd.h: 108: }
+[e :UE 49 ]
+}
+"110
+[; ;D:\mplab\pic\include\c99/lcd.h: 110: void Lcd_Shift_Left()
+[v _Lcd_Shift_Left `(v ~T0 @X0 1 ef ]
+"111
+[; ;D:\mplab\pic\include\c99/lcd.h: 111: {
+{
+[e :U _Lcd_Shift_Left ]
+[f ]
+"112
+[; ;D:\mplab\pic\include\c99/lcd.h: 112:  Lcd_Cmd(0x01);
+[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
+"113
+[; ;D:\mplab\pic\include\c99/lcd.h: 113:  Lcd_Cmd(0x08);
+[e ( _Lcd_Cmd (1 -> -> 8 `i `uc ]
+"114
+[; ;D:\mplab\pic\include\c99/lcd.h: 114: }
+[e :UE 50 ]
+}
+"18 main.c
+[; ;main.c: 18: void setup() {
+[v _setup `(v ~T0 @X0 1 ef ]
+{
+[e :U _setup ]
+[f ]
+"19
+[; ;main.c: 19:     TRISB = 0x00;
+[e = _TRISB -> -> 0 `i `uc ]
+"20
+[; ;main.c: 20:     Lcd_Init();
+[e ( _Lcd_Init ..  ]
+"21
+[; ;main.c: 21:     _delay((unsigned long)((50)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"22
+[; ;main.c: 22:     Lcd_Clear();
+[e ( _Lcd_Clear ..  ]
+"23
+[; ;main.c: 23: }
+[e :UE 51 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"25
+[; ;main.c: 25: void main() {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"26
+[; ;main.c: 26:     setup();
+[e ( _setup ..  ]
+"28
+[; ;main.c: 28:     while (1) {
+[e :U 54 ]
+{
+"29
+[; ;main.c: 29:         Lcd_Set_Cursor(1, 5);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 5 `i `uc ]
+"30
+[; ;main.c: 30:         Lcd_Write_String("Sorunsuz");
+[e ( _Lcd_Write_String (1 :s 1C ]
+"32
+[; ;main.c: 32:         Lcd_Set_Cursor(2, 6);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 6 `i `uc ]
+"33
+[; ;main.c: 33:         Lcd_Write_String("Calisiyor");
+[e ( _Lcd_Write_String (1 :s 2C ]
+"35
+[; ;main.c: 35:         _delay((unsigned long)((1000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"36
+[; ;main.c: 36:     }
+}
+[e :U 53 ]
+[e $U 54  ]
+[e :U 55 ]
+"37
+[; ;main.c: 37: }
+[e :UE 52 ]
+}
+[a 1C 83 111 114 117 110 115 117 122 0 ]
+[a 2C 67 97 108 105 115 105 121 111 114 0 ]

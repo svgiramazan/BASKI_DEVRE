@@ -1,0 +1,806 @@
+
+
+Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
+                                                                                               Thu Dec 26 17:26:19 2024
+
+Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1 
+     1                           	processor	16F84A
+     2                           	pagewidth 120
+     3                           	opt	flic
+     4                           	psect	strings,global,class=STRING,space=0,delta=2,noexec
+     5                           	psect	cinit,global,class=CODE,space=0,merge=1,delta=2
+     6                           	psect	bssBANK0,global,class=BANK0,space=1,delta=1,noexec
+     7                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1,noexec
+     8                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1,noexec
+     9                           	psect	maintext,global,class=CODE,space=0,split=1,delta=2
+    10                           	psect	text1,local,class=CODE,space=0,merge=1,delta=2
+    11                           	psect	text2,local,class=CODE,space=0,merge=1,delta=2
+    12                           	psect	text3,local,class=CODE,space=0,merge=1,delta=2
+    13                           	psect	config,global,abs,ovrld,class=CONFIG,space=4,delta=2,noexec
+    14                           	dabs	1,0x4E,2
+    15     0000                     
+    16                           ; Generated 12/10/2023 GMT
+    17                           ; 
+    18                           ; Copyright © 2023, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    19                           ; All rights reserved.
+    20                           ; 
+    21                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    22                           ; 
+    23                           ; Redistribution and use in source and binary forms, with or without modification, are
+    24                           ; permitted provided that the following conditions are met:
+    25                           ; 
+    26                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    27                           ;        conditions and the following disclaimer.
+    28                           ; 
+    29                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    30                           ;        of conditions and the following disclaimer in the documentation and/or other
+    31                           ;        materials provided with the distribution. Publication is not required when
+    32                           ;        this file is used in an embedded application.
+    33                           ; 
+    34                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    35                           ;        software without specific prior written permission.
+    36                           ; 
+    37                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    38                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    39                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    40                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    41                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    42                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    43                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    44                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    45                           ; 
+    46                           ; 
+    47                           ; Code-generator required, PIC16F84A Definitions
+    48                           ; 
+    49                           ; SFR Addresses
+    50     0004                     fsr             equ	4
+    51     0004                     fsr0            equ	4
+    52     0000                     indf            equ	0
+    53     0000                     indf0           equ	0
+    54     0002                     pc              equ	2
+    55     0002                     pcl             equ	2
+    56     000A                     pclath          equ	10
+    57     0003                     status          equ	3
+    58     0000                     INDF            equ	0	;# 
+    59     0001                     TMR0            equ	1	;# 
+    60     0002                     PCL             equ	2	;# 
+    61     0003                     STATUS          equ	3	;# 
+    62     0004                     FSR             equ	4	;# 
+    63     0005                     PORTA           equ	5	;# 
+    64     0006                     PORTB           equ	6	;# 
+    65     0008                     EEDATA          equ	8	;# 
+    66     0009                     EEADR           equ	9	;# 
+    67     000A                     PCLATH          equ	10	;# 
+    68     000B                     INTCON          equ	11	;# 
+    69     0081                     OPTION_REG      equ	129	;# 
+    70     0085                     TRISA           equ	133	;# 
+    71     0086                     TRISB           equ	134	;# 
+    72     0088                     EECON1          equ	136	;# 
+    73     0089                     EECON2          equ	137	;# 
+    74     0000                     INDF            equ	0	;# 
+    75     0001                     TMR0            equ	1	;# 
+    76     0002                     PCL             equ	2	;# 
+    77     0003                     STATUS          equ	3	;# 
+    78     0004                     FSR             equ	4	;# 
+    79     0005                     PORTA           equ	5	;# 
+    80     0006                     PORTB           equ	6	;# 
+    81     0008                     EEDATA          equ	8	;# 
+    82     0009                     EEADR           equ	9	;# 
+    83     000A                     PCLATH          equ	10	;# 
+    84     000B                     INTCON          equ	11	;# 
+    85     0081                     OPTION_REG      equ	129	;# 
+    86     0085                     TRISA           equ	133	;# 
+    87     0086                     TRISB           equ	134	;# 
+    88     0088                     EECON1          equ	136	;# 
+    89     0089                     EECON2          equ	137	;# 
+    90                           
+    91                           	psect	strings
+    92     0001                     __pstrings:
+    93     0001                     stringtab:
+    94     0001                     __stringtab:
+    95     0001                     stringcode:	
+    96                           ;	String table - string pointers are 1 byte each
+    97                           
+    98     0001                     stringdir:
+    99     0001  3000               	movlw	high stringdir
+   100     0002  008A               	movwf	10
+   101     0003  0804               	movf	4,w
+   102     0004  0A84               	incf	4,f
+   103     0005  0782               	addwf	2,f
+   104     0006                     __stringbase:
+   105     0006  3400               	retlw	0
+   106     0007                     __end_of__stringtab:
+   107     0007                     _seven_seg_digits:
+   108     0007  343F               	retlw	63
+   109     0008  3406               	retlw	6
+   110     0009  345B               	retlw	91
+   111     000A  344F               	retlw	79
+   112     000B  3466               	retlw	102
+   113     000C  346D               	retlw	109
+   114     000D  347D               	retlw	125
+   115     000E  3407               	retlw	7
+   116     000F  347F               	retlw	127
+   117     0010  346F               	retlw	111
+   118     0011                     __end_of_seven_seg_digits:
+   119     0005                     _PORTA          set	5
+   120     0006                     _PORTB          set	6
+   121     0029                     _RA1            set	41
+   122     0028                     _RA0            set	40
+   123     0085                     _TRISA          set	133
+   124     0086                     _TRISB          set	134
+   125                           
+   126                           	psect	cinit
+   127     03F9                     start_initialization:	
+   128                           ; #config settings
+   129                           
+   130     03F9                     __initialization:
+   131                           
+   132                           ; Clear objects allocated to BANK0
+   133     03F9  1283               	bcf	3,5	;RP0=0, select bank0
+   134     03FA  0192               	clrf	__pbssBANK0& (0+127)
+   135     03FB  0193               	clrf	(__pbssBANK0+1)& (0+127)
+   136     03FC  0194               	clrf	(__pbssBANK0+2)& (0+127)
+   137     03FD  0195               	clrf	(__pbssBANK0+3)& (0+127)
+   138     03FE                     end_of_initialization:	
+   139                           ;End of C runtime variable initialization code
+   140                           
+   141     03FE                     __end_of__initialization:
+   142     03FE  0183               	clrf	3
+   143     03FF  2B73               	ljmp	_main	;jump to C main() function
+   144                           
+   145                           	psect	bssBANK0
+   146     0012                     __pbssBANK0:
+   147     0012                     _display2:
+   148     0012                     	ds	2
+   149     0014                     _display1:
+   150     0014                     	ds	2
+   151                           
+   152                           	psect	cstackCOMMON
+   153     0000                     __pcstackCOMMON:
+   154     0000                     ??_setup:
+   155     0000                     ??_main:	
+   156                           ; 1 bytes @ 0x0
+   157                           
+   158                           
+   159                           	psect	cstackBANK0
+   160     000C                     __pcstackBANK0:	
+   161                           ; 1 bytes @ 0x0
+   162                           
+   163     000C                     ?_setup:
+   164     000C                     ?_delay_ms:	
+   165                           ; 1 bytes @ 0x0
+   166                           
+   167     000C                     ?_update_display:	
+   168                           ; 1 bytes @ 0x0
+   169                           
+   170     000C                     ?_main:	
+   171                           ; 1 bytes @ 0x0
+   172                           
+   173     000C                     delay_ms@ms:	
+   174                           ; 1 bytes @ 0x0
+   175                           
+   176     000C                     update_display@sayi1:	
+   177                           ; 2 bytes @ 0x0
+   178                           
+   179                           
+   180                           ; 2 bytes @ 0x0
+   181     000C                     	ds	2
+   182     000E                     update_display@sayi2:
+   183     000E                     ??_delay_ms:	
+   184                           ; 2 bytes @ 0x2
+   185                           
+   186                           
+   187                           ; 1 bytes @ 0x2
+   188     000E                     	ds	1
+   189     000F                     delay_ms@i:
+   190                           
+   191                           ; 2 bytes @ 0x3
+   192     000F                     	ds	1
+   193     0010                     ??_update_display:
+   194                           
+   195                           ; 1 bytes @ 0x4
+   196     0010                     	ds	2
+   197                           
+   198                           	psect	maintext
+   199     0373                     __pmaintext:	
+   200 ;;
+   201 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   202 ;;
+   203 ;; *************** function _main *****************
+   204 ;; Defined at:
+   205 ;;		line 54 in file "main.c"
+   206 ;; Parameters:    Size  Location     Type
+   207 ;;		None
+   208 ;; Auto vars:     Size  Location     Type
+   209 ;;		None
+   210 ;; Return value:  Size  Location     Type
+   211 ;;                  1    wreg      void 
+   212 ;; Registers used:
+   213 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+   214 ;; Tracked objects:
+   215 ;;		On entry : B00/0
+   216 ;;		On exit  : 0/0
+   217 ;;		Unchanged: 0/0
+   218 ;; Data sizes:     COMMON   BANK0
+   219 ;;      Params:         0       0
+   220 ;;      Locals:         0       0
+   221 ;;      Temps:          0       0
+   222 ;;      Totals:         0       0
+   223 ;;Total ram usage:        0 bytes
+   224 ;; Hardware stack levels required when called: 2
+   225 ;; This function calls:
+   226 ;;		_delay_ms
+   227 ;;		_setup
+   228 ;;		_update_display
+   229 ;; This function is called by:
+   230 ;;		Startup code after reset
+   231 ;; This function uses a non-reentrant model
+   232 ;;
+   233                           
+   234     0373                     _main:	
+   235                           ;psect for function _main
+   236                           
+   237     0373                     l651:	
+   238                           ;incstack = 0
+   239                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
+   240                           
+   241                           
+   242                           ;main.c: 55:     setup();
+   243     0373  2330               	fcall	_setup
+   244     0374                     l653:
+   245                           
+   246                           ;main.c: 58:         if (RA0 == 1) {
+   247     0374  1283               	bcf	3,5	;RP0=0, select bank0
+   248     0375  1C05               	btfss	5,0	;volatile
+   249     0376  2B78               	goto	u131
+   250     0377  2B79               	goto	u130
+   251     0378                     u131:
+   252     0378  2BB9               	goto	l673
+   253     0379                     u130:
+   254     0379                     l655:
+   255                           
+   256                           ;main.c: 59:             delay_ms(200);
+   257     0379  30C8               	movlw	200
+   258     037A  008C               	movwf	delay_ms@ms
+   259     037B  3000               	movlw	0
+   260     037C  008D               	movwf	delay_ms@ms+1
+   261     037D  2338               	fcall	_delay_ms
+   262     037E                     l657:
+   263                           
+   264                           ;main.c: 60:             if (RA0 == 1) {
+   265     037E  1283               	bcf	3,5	;RP0=0, select bank0
+   266     037F  1C05               	btfss	5,0	;volatile
+   267     0380  2B82               	goto	u141
+   268     0381  2B83               	goto	u140
+   269     0382                     u141:
+   270     0382  2BB9               	goto	l673
+   271     0383                     u140:
+   272     0383                     l659:
+   273                           
+   274                           ;main.c: 61:                 display1++;
+   275     0383  3001               	movlw	1
+   276     0384  0794               	addwf	_display1,f
+   277     0385  1803               	skipnc
+   278     0386  0A95               	incf	_display1+1,f
+   279     0387  3000               	movlw	0
+   280     0388  0795               	addwf	_display1+1,f
+   281     0389                     l661:
+   282                           
+   283                           ;main.c: 62:                 if (display1 > 9) {
+   284     0389  0815               	movf	_display1+1,w
+   285     038A  3A80               	xorlw	128
+   286     038B  00CF               	movwf	btemp+1
+   287     038C  3080               	movlw	128
+   288     038D  024F               	subwf	btemp+1,w
+   289     038E  1D03               	skipz
+   290     038F  2B92               	goto	u155
+   291     0390  300A               	movlw	10
+   292     0391  0214               	subwf	_display1,w
+   293     0392                     u155:
+   294     0392  1C03               	skipc
+   295     0393  2B95               	goto	u151
+   296     0394  2B96               	goto	u150
+   297     0395                     u151:
+   298     0395  2BAF               	goto	l671
+   299     0396                     u150:
+   300     0396                     l663:
+   301                           
+   302                           ;main.c: 63:                     display1 = 0;
+   303     0396  1283               	bcf	3,5	;RP0=0, select bank0
+   304     0397  0194               	clrf	_display1
+   305     0398  0195               	clrf	_display1+1
+   306     0399                     l665:
+   307                           
+   308                           ;main.c: 64:                     display2++;
+   309     0399  3001               	movlw	1
+   310     039A  0792               	addwf	_display2,f
+   311     039B  1803               	skipnc
+   312     039C  0A93               	incf	_display2+1,f
+   313     039D  3000               	movlw	0
+   314     039E  0793               	addwf	_display2+1,f
+   315     039F                     l667:
+   316                           
+   317                           ;main.c: 65:                     if (display2 > 9) {
+   318     039F  0813               	movf	_display2+1,w
+   319     03A0  3A80               	xorlw	128
+   320     03A1  00CF               	movwf	btemp+1
+   321     03A2  3080               	movlw	128
+   322     03A3  024F               	subwf	btemp+1,w
+   323     03A4  1D03               	skipz
+   324     03A5  2BA8               	goto	u165
+   325     03A6  300A               	movlw	10
+   326     03A7  0212               	subwf	_display2,w
+   327     03A8                     u165:
+   328     03A8  1C03               	skipc
+   329     03A9  2BAB               	goto	u161
+   330     03AA  2BAC               	goto	u160
+   331     03AB                     u161:
+   332     03AB  2BAF               	goto	l671
+   333     03AC                     u160:
+   334     03AC                     l669:
+   335                           
+   336                           ;main.c: 66:                         display2 = 0;
+   337     03AC  1283               	bcf	3,5	;RP0=0, select bank0
+   338     03AD  0192               	clrf	_display2
+   339     03AE  0193               	clrf	_display2+1
+   340     03AF                     l671:
+   341                           
+   342                           ;main.c: 69:                 update_display(display1, display2);
+   343     03AF  1283               	bcf	3,5	;RP0=0, select bank0
+   344     03B0  0815               	movf	_display1+1,w
+   345     03B1  008D               	movwf	update_display@sayi1+1
+   346     03B2  0814               	movf	_display1,w
+   347     03B3  008C               	movwf	update_display@sayi1
+   348     03B4  0813               	movf	_display2+1,w
+   349     03B5  008F               	movwf	update_display@sayi2+1
+   350     03B6  0812               	movf	_display2,w
+   351     03B7  008E               	movwf	update_display@sayi2
+   352     03B8  2355               	fcall	_update_display
+   353     03B9                     l673:
+   354                           
+   355                           ;main.c: 73:         if (RA1 == 1) {
+   356     03B9  1283               	bcf	3,5	;RP0=0, select bank0
+   357     03BA  1C85               	btfss	5,1	;volatile
+   358     03BB  2BBD               	goto	u171
+   359     03BC  2BBE               	goto	u170
+   360     03BD                     u171:
+   361     03BD  2B74               	goto	l653
+   362     03BE                     u170:
+   363     03BE                     l675:
+   364                           
+   365                           ;main.c: 74:             delay_ms(200);
+   366     03BE  30C8               	movlw	200
+   367     03BF  008C               	movwf	delay_ms@ms
+   368     03C0  3000               	movlw	0
+   369     03C1  008D               	movwf	delay_ms@ms+1
+   370     03C2  2338               	fcall	_delay_ms
+   371     03C3                     l677:
+   372                           
+   373                           ;main.c: 75:             if (RA1 == 1) {
+   374     03C3  1283               	bcf	3,5	;RP0=0, select bank0
+   375     03C4  1C85               	btfss	5,1	;volatile
+   376     03C5  2BC7               	goto	u181
+   377     03C6  2BC8               	goto	u180
+   378     03C7                     u181:
+   379     03C7  2B74               	goto	l653
+   380     03C8                     u180:
+   381     03C8                     l679:
+   382                           
+   383                           ;main.c: 76:                 if (display1 == 0) {
+   384     03C8  0814               	movf	_display1,w
+   385     03C9  0415               	iorwf	_display1+1,w
+   386     03CA  1D03               	btfss	3,2
+   387     03CB  2BCD               	goto	u191
+   388     03CC  2BCE               	goto	u190
+   389     03CD                     u191:
+   390     03CD  2BE7               	goto	l685
+   391     03CE                     u190:
+   392     03CE                     l681:
+   393                           
+   394                           ;main.c: 77:                     if (display2 > 0) {
+   395     03CE  0813               	movf	_display2+1,w
+   396     03CF  3A80               	xorlw	128
+   397     03D0  00CF               	movwf	btemp+1
+   398     03D1  3080               	movlw	128
+   399     03D2  024F               	subwf	btemp+1,w
+   400     03D3  1D03               	skipz
+   401     03D4  2BD7               	goto	u205
+   402     03D5  3001               	movlw	1
+   403     03D6  0212               	subwf	_display2,w
+   404     03D7                     u205:
+   405     03D7  1C03               	skipc
+   406     03D8  2BDA               	goto	u201
+   407     03D9  2BDB               	goto	u200
+   408     03DA                     u201:
+   409     03DA  2BED               	goto	l687
+   410     03DB                     u200:
+   411     03DB                     l683:
+   412                           
+   413                           ;main.c: 78:                         display2--;
+   414     03DB  30FF               	movlw	255
+   415     03DC  1283               	bcf	3,5	;RP0=0, select bank0
+   416     03DD  0792               	addwf	_display2,f
+   417     03DE  1803               	skipnc
+   418     03DF  0A93               	incf	_display2+1,f
+   419     03E0  30FF               	movlw	255
+   420     03E1  0793               	addwf	_display2+1,f
+   421                           
+   422                           ;main.c: 79:                         display1 = 9;
+   423     03E2  3009               	movlw	9
+   424     03E3  0094               	movwf	_display1
+   425     03E4  3000               	movlw	0
+   426     03E5  0095               	movwf	_display1+1
+   427     03E6  2BED               	goto	l687
+   428     03E7                     l685:
+   429                           
+   430                           ;main.c: 82:                     display1--;
+   431     03E7  30FF               	movlw	255
+   432     03E8  0794               	addwf	_display1,f
+   433     03E9  1803               	skipnc
+   434     03EA  0A95               	incf	_display1+1,f
+   435     03EB  30FF               	movlw	255
+   436     03EC  0795               	addwf	_display1+1,f
+   437     03ED                     l687:
+   438                           
+   439                           ;main.c: 84:                 update_display(display1, display2);
+   440     03ED  1283               	bcf	3,5	;RP0=0, select bank0
+   441     03EE  0815               	movf	_display1+1,w
+   442     03EF  008D               	movwf	update_display@sayi1+1
+   443     03F0  0814               	movf	_display1,w
+   444     03F1  008C               	movwf	update_display@sayi1
+   445     03F2  0813               	movf	_display2+1,w
+   446     03F3  008F               	movwf	update_display@sayi2+1
+   447     03F4  0812               	movf	_display2,w
+   448     03F5  008E               	movwf	update_display@sayi2
+   449     03F6  2355               	fcall	_update_display
+   450     03F7  2B74               	goto	l653
+   451     03F8  2800               	ljmp	start
+   452     03F9                     __end_of_main:
+   453                           
+   454                           	psect	text1
+   455     0355                     __ptext1:	
+   456 ;; *************** function _update_display *****************
+   457 ;; Defined at:
+   458 ;;		line 46 in file "main.c"
+   459 ;; Parameters:    Size  Location     Type
+   460 ;;  sayi1           2    0[BANK0 ] int 
+   461 ;;  sayi2           2    2[BANK0 ] int 
+   462 ;; Auto vars:     Size  Location     Type
+   463 ;;		None
+   464 ;; Return value:  Size  Location     Type
+   465 ;;                  1    wreg      void 
+   466 ;; Registers used:
+   467 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath
+   468 ;; Tracked objects:
+   469 ;;		On entry : 0/0
+   470 ;;		On exit  : 0/0
+   471 ;;		Unchanged: 0/0
+   472 ;; Data sizes:     COMMON   BANK0
+   473 ;;      Params:         0       4
+   474 ;;      Locals:         0       0
+   475 ;;      Temps:          0       2
+   476 ;;      Totals:         0       6
+   477 ;;Total ram usage:        6 bytes
+   478 ;; Hardware stack levels used: 2
+   479 ;; This function calls:
+   480 ;;		Nothing
+   481 ;; This function is called by:
+   482 ;;		_main
+   483 ;; This function uses a non-reentrant model
+   484 ;;
+   485                           
+   486     0355                     _update_display:	
+   487                           ;psect for function _update_display
+   488                           
+   489     0355                     l649:	
+   490                           ;incstack = 0
+   491                           ; Regs used in _update_display: [wreg-fsr0h+status,2+status,0+pclath]
+   492                           
+   493                           
+   494                           ;main.c: 48:     PORTB = (unsigned char)((PORTB & 0xF0) | (seven_seg_digits[sayi1] & 0x0
+      +                          F));
+   495     0355  1283               	bcf	3,5	;RP0=0, select bank0
+   496     0356  080C               	movf	update_display@sayi1,w
+   497     0357  3E01               	addlw	low ((_seven_seg_digits-__stringbase)| (0+32768))
+   498     0358  0084               	movwf	4
+   499     0359  2001               	fcall	stringdir
+   500     035A  390F               	andlw	15
+   501     035B  0090               	movwf	??_update_display
+   502     035C  0806               	movf	6,w	;volatile
+   503     035D  39F0               	andlw	240
+   504     035E  0410               	iorwf	??_update_display,w
+   505     035F  0086               	movwf	6	;volatile
+   506                           
+   507                           ;main.c: 50:     PORTB = (unsigned char)((PORTB & 0x0F) | ((seven_seg_digits[sayi2] << 4
+      +                          ) & 0xF0));
+   508     0360  080E               	movf	update_display@sayi2,w
+   509     0361  3E01               	addlw	low ((_seven_seg_digits-__stringbase)| (0+32768))
+   510     0362  0084               	movwf	4
+   511     0363  2001               	fcall	stringdir
+   512     0364  0090               	movwf	??_update_display
+   513     0365  3004               	movlw	4
+   514     0366                     u125:
+   515     0366  1003               	clrc
+   516     0367  0D90               	rlf	??_update_display,f
+   517     0368  3EFF               	addlw	-1
+   518     0369  1D03               	skipz
+   519     036A  2B66               	goto	u125
+   520     036B  30F0               	movlw	240
+   521     036C  0510               	andwf	??_update_display,w
+   522     036D  0091               	movwf	??_update_display+1
+   523     036E  0806               	movf	6,w	;volatile
+   524     036F  390F               	andlw	15
+   525     0370  0411               	iorwf	??_update_display+1,w
+   526     0371  0086               	movwf	6	;volatile
+   527     0372                     l32:
+   528     0372  0008               	return
+   529     0373                     __end_of_update_display:
+   530                           
+   531                           	psect	text2
+   532     0330                     __ptext2:	
+   533 ;; *************** function _setup *****************
+   534 ;; Defined at:
+   535 ;;		line 33 in file "main.c"
+   536 ;; Parameters:    Size  Location     Type
+   537 ;;		None
+   538 ;; Auto vars:     Size  Location     Type
+   539 ;;		None
+   540 ;; Return value:  Size  Location     Type
+   541 ;;                  1    wreg      void 
+   542 ;; Registers used:
+   543 ;;		status,2
+   544 ;; Tracked objects:
+   545 ;;		On entry : 0/0
+   546 ;;		On exit  : 0/0
+   547 ;;		Unchanged: 0/0
+   548 ;; Data sizes:     COMMON   BANK0
+   549 ;;      Params:         0       0
+   550 ;;      Locals:         0       0
+   551 ;;      Temps:          0       0
+   552 ;;      Totals:         0       0
+   553 ;;Total ram usage:        0 bytes
+   554 ;; Hardware stack levels used: 1
+   555 ;; This function calls:
+   556 ;;		Nothing
+   557 ;; This function is called by:
+   558 ;;		_main
+   559 ;; This function uses a non-reentrant model
+   560 ;;
+   561                           
+   562     0330                     _setup:	
+   563                           ;psect for function _setup
+   564                           
+   565     0330                     l641:	
+   566                           ;incstack = 0
+   567                           ; Regs used in _setup: [status,2]
+   568                           
+   569                           
+   570                           ;main.c: 34:     TRISB = 0x00;
+   571     0330  1683               	bsf	3,5	;RP0=1, select bank1
+   572     0331  0186               	clrf	6	;volatile
+   573     0332                     l643:
+   574                           
+   575                           ;main.c: 35:     TRISA = 0x03;
+   576     0332  3003               	movlw	3
+   577     0333  0085               	movwf	5	;volatile
+   578                           
+   579                           ;main.c: 36:     PORTB = 0x00;
+   580     0334  1283               	bcf	3,5	;RP0=0, select bank0
+   581     0335  0186               	clrf	6	;volatile
+   582                           
+   583                           ;main.c: 37:     PORTA = 0x00;
+   584     0336  0185               	clrf	5	;volatile
+   585     0337                     l23:
+   586     0337  0008               	return
+   587     0338                     __end_of_setup:
+   588                           
+   589                           	psect	text3
+   590     0338                     __ptext3:	
+   591 ;; *************** function _delay_ms *****************
+   592 ;; Defined at:
+   593 ;;		line 40 in file "main.c"
+   594 ;; Parameters:    Size  Location     Type
+   595 ;;  ms              2    0[BANK0 ] unsigned int 
+   596 ;; Auto vars:     Size  Location     Type
+   597 ;;  i               2    3[BANK0 ] unsigned int 
+   598 ;; Return value:  Size  Location     Type
+   599 ;;                  1    wreg      void 
+   600 ;; Registers used:
+   601 ;;		wreg, status,2
+   602 ;; Tracked objects:
+   603 ;;		On entry : 0/0
+   604 ;;		On exit  : 0/0
+   605 ;;		Unchanged: 0/0
+   606 ;; Data sizes:     COMMON   BANK0
+   607 ;;      Params:         0       2
+   608 ;;      Locals:         0       2
+   609 ;;      Temps:          0       1
+   610 ;;      Totals:         0       5
+   611 ;;Total ram usage:        5 bytes
+   612 ;; Hardware stack levels used: 1
+   613 ;; This function calls:
+   614 ;;		Nothing
+   615 ;; This function is called by:
+   616 ;;		_main
+   617 ;; This function uses a non-reentrant model
+   618 ;;
+   619                           
+   620     0338                     _delay_ms:	
+   621                           ;psect for function _delay_ms
+   622                           
+   623     0338                     l645:	
+   624                           ;incstack = 0
+   625                           ; Regs used in _delay_ms: [wreg+status,2]
+   626                           
+   627                           
+   628                           ;main.c: 41:     for (unsigned int i = 0; i < ms; i++) {
+   629     0338  1283               	bcf	3,5	;RP0=0, select bank0
+   630     0339  018F               	clrf	delay_ms@i
+   631     033A  0190               	clrf	delay_ms@i+1
+   632     033B  2B4A               	goto	l26
+   633     033C                     l647:
+   634                           
+   635                           ;main.c: 42:         _delay((unsigned long)((1)*(4000000/4000.0)));
+   636     033C  30C7               	movlw	199
+   637     033D  008E               	movwf	??_delay_ms
+   638     033E                     u217:
+   639     033E  2B3F               	nop2
+   640     033F  0B8E               	decfsz	??_delay_ms,f
+   641     0340  2B3E               	goto	u217
+   642     0341  2B42               	nop2
+   643     0342  2B43               	nop2
+   644                           
+   645                           ;main.c: 43:     }
+   646     0343  3001               	movlw	1
+   647     0344  1283               	bcf	3,5	;RP0=0, select bank0
+   648     0345  078F               	addwf	delay_ms@i,f
+   649     0346  1803               	skipnc
+   650     0347  0A90               	incf	delay_ms@i+1,f
+   651     0348  3000               	movlw	0
+   652     0349  0790               	addwf	delay_ms@i+1,f
+   653     034A                     l26:
+   654     034A  080D               	movf	delay_ms@ms+1,w
+   655     034B  0210               	subwf	delay_ms@i+1,w
+   656     034C  1D03               	skipz
+   657     034D  2B50               	goto	u115
+   658     034E  080C               	movf	delay_ms@ms,w
+   659     034F  020F               	subwf	delay_ms@i,w
+   660     0350                     u115:
+   661     0350  1C03               	skipc
+   662     0351  2B53               	goto	u111
+   663     0352  2B54               	goto	u110
+   664     0353                     u111:
+   665     0353  2B3C               	goto	l647
+   666     0354                     u110:
+   667     0354                     l29:
+   668     0354  0008               	return
+   669     0355                     __end_of_delay_ms:
+   670     0000                     ___latbits      equ	0
+   671     004E                     btemp           set	78	;btemp
+   672     004E                     wtemp0          set	78
+   673                           
+   674                           	psect	config
+   675                           
+   676                           ;Config register CONFIG @ 0x2007
+   677                           ;	Oscillator Selection bits
+   678                           ;	FOSC = XT, XT oscillator
+   679                           ;	Watchdog Timer
+   680                           ;	WDTE = OFF, WDT disabled
+   681                           ;	Power-up Timer Enable bit
+   682                           ;	PWRTE = ON, Power-up Timer is enabled
+   683                           ;	Code Protection bit
+   684                           ;	CP = OFF, Code protection disabled
+   685     2007                     	org	8199
+   686     2007  3FF1               	dw	16369
+
+Data Sizes:
+    Strings     0
+    Constant    10
+    Data        0
+    BSS         4
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON            0      0       0
+    BANK0            66      6      10
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    None.
+
+Critical Paths under _main in BANK0
+
+    _main->_update_display
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0      96
+                           _delay_ms
+                              _setup
+                     _update_display
+ ---------------------------------------------------------------------------------
+ (2) _update_display                                       6     2      4      48
+                                              0 BANK0      6     2      4
+ ---------------------------------------------------------------------------------
+ (1) _setup                                                0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _delay_ms                                             5     3      2      48
+                                              0 BANK0      5     3      2
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _delay_ms
+   _setup
+   _update_display
+
+Address spaces:
+Name               Size   Autos  Total    Usage
+BITCOMMON            0      0       0      0.0%
+BITBANK0            66      0       0      0.0%
+COMMON               0      0       0      0.0%
+BANK0               66      6      10     15.2%
+STACK                0      0       0      0.0%
+DATA                 0      0      10      0.0%
+
+
+Microchip Technology PIC Macro Assembler V3.00 build 20241204225717 
+Symbol Table                                                                                   Thu Dec 26 17:26:19 2024
+
+                       pc 0002                        l23 0337                        l32 0372  
+                      l26 034A                        l29 0354                        fsr 0004  
+          _update_display 0355                       l641 0330                       l643 0332  
+                     l651 0373                       l645 0338                       l661 0389  
+                     l653 0374                       l647 033C                       l663 0396  
+                     l671 03AF                       l655 0379                       l649 0355  
+                     l681 03CE                       l665 0399                       l657 037E  
+                     l673 03B9                       l683 03DB                       l675 03BE  
+                     l667 039F                       l659 0383                       l685 03E7  
+                     l677 03C3                       l669 03AC                       l687 03ED  
+                     l679 03C8                       _RA0 0028                       _RA1 0029  
+                     u110 0354                       u111 0353                       u200 03DB  
+                     u201 03DA                       u130 0379                       u115 0350  
+                     u131 0378                       u140 0383                       u125 0366  
+                     u205 03D7                       u141 0382                       u150 0396  
+                     u151 0395                       u160 03AC                       u217 033E  
+                     u161 03AB                       u170 03BE                       u171 03BD  
+                     u155 0392                       u180 03C8                       u181 03C7  
+                     u165 03A8                       u190 03CE                       u191 03CD  
+                     fsr0 0004                      _main 0373                      btemp 004E  
+                    start 0000    __end_of_update_display 0373                     ?_main 000C  
+                   _PORTA 0005                     _PORTB 0006                     _TRISA 0085  
+                   _TRISB 0086                     _setup 0330                     pclath 000A  
+                   status 0003                     wtemp0 004E           __initialization 03F9  
+            __end_of_main 03F9           ?_update_display 000C                    ??_main 0000  
+                  ?_setup 000C          __end_of_delay_ms 0355   __end_of__initialization 03FE  
+          __pcstackCOMMON 0000             __end_of_setup 0338       update_display@sayi1 000C  
+     update_display@sayi2 000E                   ??_setup 0000                __pbssBANK0 0012  
+              __pmaintext 0373                 ?_delay_ms 000C                __stringtab 0001  
+        ??_update_display 0010                   __ptext1 0355                   __ptext2 0330  
+                 __ptext3 0338                ??_delay_ms 000E                delay_ms@ms 000C  
+    end_of_initialization 03FE          _seven_seg_digits 0007       start_initialization 03F9  
+               ___latbits 0000             __pcstackBANK0 000C                 __pstrings 0001  
+               delay_ms@i 000F               __stringbase 0006  __end_of_seven_seg_digits 0011  
+      __end_of__stringtab 0007                  _delay_ms 0338                  _display1 0014  
+                _display2 0012                 stringcode 0001                  stringdir 0001  
+                stringtab 0001  
